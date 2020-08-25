@@ -1,0 +1,31 @@
+.addBtn {
+    background-color: #008000;
+    color: white;
+}
+
+.rmvBtn {
+    background-color: #f44336;
+    color: white;
+  }
+.disabled {
+  cursor:not-allowed;
+  background-color: white;
+  color: grey;
+}
+.cart {
+    border-style: 'solid';
+  }
+
+  .wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    background-color: lightgray;
+    align-content: center;
+    border: 3px solid green;
+    text-align: center;
+  }

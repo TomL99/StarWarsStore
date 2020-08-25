@@ -1,0 +1,13 @@
+.cart{
+    background-color: gold;
+    display: flex;
+    justify-Content: center;
+    align-Items: center;
+}
+
+.container {
+    background-color: lightyellow;
+    align-content: center;
+    border: 3px solid brown;
+    text-align: center;
+  }
