@@ -10,7 +10,8 @@ export const ShoppingContextProvider = (props) => {
 		choice: "",
 		total: 0,
 		cart: [],
-		cartCount: {}
+		cartCount: {},
+		key: "name"
 	})
 	
 	useEffect(() => {

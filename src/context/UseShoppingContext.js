@@ -7,17 +7,12 @@ export const useShoppingContext = () => {
     const retrieveDetailsTable = async (choice) => {
         let response = await fetch(data.navBarData[choice])
         let info = await response.json()
+        let key = Object.keys(info["results"][0])[0]
         setData( prevData => ({
             ...prevData,
              tableData: info,
-             choice: choice
-        }))
-    }
-
-    const setChoice = async (choice) => {
-        setData( prevData => ({
-            ...prevData,
-            choice: choice
+             choice: choice,
+             key: key
         }))
     }
 
@@ -68,7 +63,6 @@ export const useShoppingContext = () => {
         {   
             data,
             retrieveDetailsTable,
-            setChoice,
             addToCart,
             removeFromCart
         }
