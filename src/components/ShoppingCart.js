@@ -6,7 +6,7 @@ export default function ShoppingCart() {
     const {data, retrieveDetailsNav} = useShoppingContext()
     let table = Object.keys(data.cartCount).map(item => {
             if (data.cartCount[item] > 0) {
-                return (<p><b>{item}</b> Count: {data.cartCount[item]}</p> )
+                return (<p key={item}><b>{item}</b> Count: {data.cartCount[item]}</p> )
             }
         }
     )
