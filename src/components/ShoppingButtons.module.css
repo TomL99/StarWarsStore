@@ -1,11 +1,13 @@
 .addBtn {
     background-color: #008000;
     color: white;
+    cursor: pointer;
 }
 
 .rmvBtn {
     background-color: #f44336;
     color: white;
+    cursor: pointer;
   }
 .disabled {
   cursor:not-allowed;
