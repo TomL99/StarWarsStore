@@ -13,8 +13,8 @@ export default function ShoppingCart() {
     
     return (
         <>
-            <h1 className={styles.cart}>Total: ${data.total}</h1>
-            <div className={styles.container}>
+            <h1 className={styles.total}>Total: ${data.total}</h1>
+            <div className={styles.cart}>
                 {table}
             </div>
         </>

@@ -17,7 +17,7 @@ export const useShoppingContext = () => {
     }
 
     const addToCart = async (name) => {
-        let cart = data.cart
+        let cart = [...data.cart]
         cart.push(name)
         let cartCount = {...data.cartCount}
         if (cartCount[name] !== undefined) {
@@ -38,7 +38,7 @@ export const useShoppingContext = () => {
     }
 
     const removeFromCart = async (name) => {
-        let cart = data.cart
+        let cart = [...data.cart]
         let index = cart.indexOf(name)
         if (index !== -1) {
             let total = data.total
@@ -54,7 +54,7 @@ export const useShoppingContext = () => {
                     cart: cart,
                     cartCount: cartCount,
                     total: total
-                    })
+                })
             )        
         }
     }

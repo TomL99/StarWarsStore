@@ -1,11 +1,11 @@
-.cart{
+.total{
     background-color: gold;
     display: flex;
     justify-Content: center;
     align-Items: center;
 }
 
-.container {
+.cart {
     background-color: lightyellow;
     align-content: center;
     border: 3px solid brown;

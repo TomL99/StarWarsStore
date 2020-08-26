@@ -13,8 +13,8 @@ export default function ShoppingButtons({name}) {
         c => 
         <div key={c[data.key]}>
             <h3>{c[data.key]}</h3>
-            <button className={data.cart.includes(c[data.key]) ? styles.rmvBtn : styles.disabled} type="button" onClick={() => removeFromCart(c[data.key]) }>Remove</button> 
-            <button className={styles.addBtn} type="button" onClick={() => addToCart(c[data.key]) }>Add</button>
+            <button className={ data.cart.includes(c[data.key]) ? styles.rmvBtn : styles.disabled } type="button" onClick={ () => removeFromCart(c[data.key]) }>Remove</button> 
+            <button className={ styles.addBtn } type="button" onClick={ () => addToCart(c[data.key]) }>Add</button>
         </div>
     )
     
